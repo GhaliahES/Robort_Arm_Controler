@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Robot Control</title>
+</head>
+<body>
+
+
+	 <div class = "slideContainer">
+     <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+
+<center>
+	<h1>Robot Controler</h1>
+
+
+	<p>Control 1</p>
+
+<div class="con1">
+	<input type="range" min="0" max="180" value="0" id="rang1" class="slider" name="ran1">
+
+	<p>Value: <span id = "value1"></span></p>
+</div>
+
+	<p>Control 2</p>
+
+	<div class="con2">
+	<input type="range" min="0" max="180" value="0" id="rang2"class="slider" name="ran2">
+	<p>Value: <span id = "value2"></span></p>
+</div>
+
+	<p>Control 3</p>
+
+	<div class="con3">
+	<input type="range" min="0" max="180" value="0" id="rang3" class="slider" name="ran3">
+	<p>Value: <span id = "value3"></span></p>
+</div>
+
+
+	<p>Control 4</p>
+
+	<div class="con4">
+	<input type="range" min="0" max="180" value="0" id="rang4" class="slider" name="ran4">
+	<p>Value: <span id = "value4"></span></p>
+</div>
+	<p>Control 5</p>
+
+	<div class="con5">
+	<input type="range" min="0" max="180" value="0" id="rang5" class="slider" name="ran5">
+	<p>Value: <span id = "value5"></span></p>
+</div>
+<br>
+	<p>Control 6</p>
+
+	<div class="con6">
+	<input type="range" min="0" max="180" value="0" id="rang6" class="slider" name="ran6">
+
+	<p>Value: <span id = "value6"></span></p>
+</div>
+
+ <form method= "POST">
+    <input type="submit" name="submit" value="Submit">
+     <input type="submit" name="Run" value = "Run">
+  </form>
+  
+</div>
+
+
+ </center>
+
+
+</body>
+<script>
+
+
+var slider1 = document.getElementById("rang1");
+var  output1 = document.getElementById("value1");
+
+output1.innerHTML = slider1.value;
+
+slider1.oninput = function() {
+    output1.innerHTML = this.value;
+    
+}
+
+
+var slider2 = document.getElementById("rang2");
+var  output2 = document.getElementById("value2");
+
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+    output2.innerHTML = this.value;
+    
+}
+
+
+var slider3 = document.getElementById("rang3");
+var  output3 = document.getElementById("value3");
+
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+    output3.innerHTML = this.value;
+    
+}
+
+
+var slider4 = document.getElementById("rang4");
+var  output4 = document.getElementById("value4");
+
+output4.innerHTML = slider4.value;
+
+slider4.oninput = function() {
+    output4.innerHTML = this.value;
+    
+}
+
+
+
+var slider5 = document.getElementById("rang5");
+var  output5 = document.getElementById("value5");
+
+output5.innerHTML = slider5.value;
+
+slider5.oninput = function() {
+    output5.innerHTML = this.value;
+    
+}
+    
+var slider6 = document.getElementById("rang6");
+var  output6 = document.getElementById("value6");
+
+output6.innerHTML = slider6.value;
+
+slider6.oninput = function() {
+    output6.innerHTML = this.value;
+    
+}</script>
+
+</html>
