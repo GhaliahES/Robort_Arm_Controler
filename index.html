@@ -3,67 +3,68 @@
 <head>
 	<meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-	<title>Robot Control</title>
+	<title>Robot Arm Control</title>
 </head>
 <body>
 
 
-	 <div class = "slideContainer">
-     <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+	  <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form action="db.php" method = "POST" target="dummyframe">
 
 
 <center>
-	<h1>Robot Controler</h1>
+<font color="white">
+	<h1>Robot Arm Controler</h1>
+	
 
 
-	<p>Control 1</p>
 
 <div class="con1">
-	<input type="range" min="0" max="180" value="0" id="rang1" class="slider" name="ran1">
+	Control 1:<input type="range" min="0" max="180" value="0" id="rang1" class="slider" name="ran1">
 
 	<p>Value: <span id = "value1"></span></p>
 </div>
 
-	<p>Control 2</p>
 
 	<div class="con2">
-	<input type="range" min="0" max="180" value="0" id="rang2"class="slider" name="ran2">
+	Control 2:<input type="range" min="0" max="180" value="0" id="rang2"class="slider" name="ran2">
 	<p>Value: <span id = "value2"></span></p>
 </div>
 
-	<p>Control 3</p>
 
 	<div class="con3">
-	<input type="range" min="0" max="180" value="0" id="rang3" class="slider" name="ran3">
+	Control 3:<input type="range" min="0" max="180" value="0" id="rang3" class="slider" name="ran3">
 	<p>Value: <span id = "value3"></span></p>
 </div>
 
 
-	<p>Control 4</p>
 
 	<div class="con4">
-	<input type="range" min="0" max="180" value="0" id="rang4" class="slider" name="ran4">
+	Control 4:<input type="range" min="0" max="180" value="0" id="rang4" class="slider" name="ran4">
 	<p>Value: <span id = "value4"></span></p>
 </div>
-	<p>Control 5</p>
 
 	<div class="con5">
-	<input type="range" min="0" max="180" value="0" id="rang5" class="slider" name="ran5">
+	Control 5:<input type="range" min="0" max="180" value="0" id="rang5" class="slider" name="ran5">
 	<p>Value: <span id = "value5"></span></p>
 </div>
 <br>
-	<p>Control 6</p>
 
 	<div class="con6">
-	<input type="range" min="0" max="180" value="0" id="rang6" class="slider" name="ran6">
+	Control 6:<input type="range" min="0" max="180" value="0" id="rang6" class="slider" name="ran6">
 
 	<p>Value: <span id = "value6"></span></p>
 </div>
 
- <form method= "POST">
-    <input type="submit" name="submit" value="Submit">
-     <input type="submit" name="Run" value = "Run">
-  </form>
+ 
+ 	<div class="container">
+    <input class= "submitt" type="submit" name=submit value="Submit">
+</div>
+<div class="container">
+     <input class="runn" type="submit" name=Run value = "Run">
+ </div>
+ 
+ 
   
 </div>
 
@@ -139,5 +140,5 @@ slider6.oninput = function() {
     output6.innerHTML = this.value;
     
 }</script>
-
+ </form>
 </html>
